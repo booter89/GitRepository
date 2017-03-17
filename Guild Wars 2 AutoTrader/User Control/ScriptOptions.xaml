@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="Guild_Wars_2_AutoTrader.User_Control.ScriptOptions"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Guild_Wars_2_AutoTrader.User_Control"    
+             mc:Ignorable="d" 
+             d:DesignHeight="266" d:DesignWidth="790"
+             Background="WhiteSmoke">
+
+    <UserControl.Resources>
+        <Style TargetType="CheckBox" x:Key="ACheckedBox">
+            <Setter Property="IsChecked" Value="False" />
+        </Style>
+        <Style TargetType="CheckBox" x:Key="GrayedOutCheckedBox">
+            <Setter Property="IsChecked" Value="False" />
+            <Setter Property="IsEnabled" Value="False" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid x:Name="OptionsGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="75" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="Options" 
+                   Text="Script Options"
+                   FontSize="20"
+                   FontWeight="Black"
+                   TextAlignment="Right" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="0,7,0,0"
+                   TextWrapping="Wrap" 
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   Grid.Row="0"/>
+        
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="5">
+            <CheckBox x:Name="RemoveAllOrdersCb" Content="Remove All Buy Orders" 
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Click="RemoveAllOrdersCb_Changed"
+                  IsChecked="{Binding Path=CanRemoveAll}" 
+                  Style="{StaticResource ACheckedBox}" 
+                  Margin="2.5" 
+                  />
+
+            <CheckBox x:Name="BuyAndSellCb" Content="Buy and Sell" 
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top" Click="BuyAndSellCb_Changed"
+                  IsChecked="{Binding Path=CanBuyAndSell}" 
+                  Style="{StaticResource ACheckedBox}"
+                  Margin="2.5"
+                      
+                  />
+            
+            <CheckBox x:Name="BuyWeaponsCb" Content="Buy Weapons" 
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top" Click="BuyWeaponsCb_Changed"
+                  IsChecked="{Binding Path=CanBuyWeapon}" 
+                  Style="{StaticResource GrayedOutCheckedBox}" 
+                  Margin="25,2.5,2.5,2.5"/>
+
+            <CheckBox x:Name="RemoveBuyOrdersCb" Content="Remove Buy Orders" 
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top" Click="RemoveBuyOrdersCb_Changed"
+                  IsChecked="{Binding Path=CanRemoveOrder}" 
+                  Style="{StaticResource GrayedOutCheckedBox}" 
+                  Margin="50,2.5,2.5,2.5"/>
+
+            <CheckBox x:Name="SellWeaponsCb" Content="Sell Weapons"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top" Click="SellWeaponsCb_Changed"
+                  IsChecked="{Binding Path=CanSellWeapon}" 
+                  Style="{StaticResource GrayedOutCheckedBox}" 
+                  Margin="25,2.5,2.5,2.5"/>
+
+        </StackPanel>
+        
+
+        <TextBlock x:Name="IndexTb" 
+                   TextAlignment="Right" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Top"
+                   Padding="0,7,0,0"
+                   TextWrapping="Wrap" Text="Index: 1"
+                   Grid.Column="0"
+                   Grid.Row="7"/>
+
+        <Button x:Name="GenerateScriptBtn" Content="Generate Script" 
+                Click="GenerateScriptBtn_Click" Height="30" Width="100"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Grid.Column="0"
+                Grid.Row="7"
+                Grid.ColumnSpan="4" />
+
+    </Grid>
+</UserControl>

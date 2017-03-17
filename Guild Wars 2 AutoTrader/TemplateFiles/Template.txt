@@ -1,0 +1,422 @@
+
+;Weapon Names
+acWeaponArray := ["Adam","Adder's Hiss","Ak-Muhl's Jaw","Alderune's Last Stand","Ambrosia","Anton's Boot Blade","Anura","Apothecary's Pearl Bludgeoner","Apothecary's Pearl Blunderbuss","Apothecary's Pearl Brazier","Apothecary's Pearl Broadsword","Apothecary's Pearl Carver","Apothecary's Pearl Conch","Apothecary's Pearl Crusher","Apothecary's Pearl Handcannon","Apothecary's Pearl Needler","Apothecary's Pearl Quarterstaff","Apothecary's Pearl Reaver","Apothecary's Pearl Rod","Apothecary's Pearl Sabre","Apothecary's Pearl Shell","Apothecary's Pearl Siren","Apothecary's Pearl Stinger","Arc","Arcanus Obscurus","Assassin's Pearl Bludgeoner","Assassin's Pearl Blunderbuss","Assassin's Pearl Brazier","Assassin's Pearl Broadsword","Assassin's Pearl Carver","Assassin's Pearl Conch","Assassin's Pearl Crusher","Assassin's Pearl Handcannon","Assassin's Pearl Needler","Assassin's Pearl Quarterstaff","Assassin's Pearl Reaver","Assassin's Pearl Rod","Assassin's Pearl Sabre","Assassin's Pearl Shell","Assassin's Pearl Siren","Assassin's Pearl Stinger","Avirdanag","Axiquiotl","Azure Railgun","Beacon of Kryta","Beacon of Light","Beacon of the True Legions","Belladonna of Dreams","Berserker's Mace","Berserker's Pearl Bludgeoner","Berserker's Pearl Blunderbuss","Berserker's Pearl Brazier","Berserker's Pearl Broadsword","Berserker's Pearl Carver","Berserker's Pearl Conch","Berserker's Pearl Crusher","Berserker's Pearl Handcannon","Berserker's Pearl Needler","Berserker's Pearl Quarterstaff","Berserker's Pearl Reaver","Berserker's Pearl Rod","Berserker's Pearl Sabre","Berserker's Pearl Shell","Berserker's Pearl Siren","Berserker's Pearl Stinger","Big Juju","Bite of the Ebon Viper","Black Fleet Bludgeon","Blaze of the Serpents","Bloodlily of Dreams","Bloodroot of Dreams","Bloodseeker","Bonetti's Rapier","Bow of the Pale Stag","Bow of the White Hart","Bramblethorne","Brandt","Breath of Flame","Call of the Commissar","Carrion Legionnaire Axe of Rage","Carrion Legionnaire Bayonet of Rage","Carrion Legionnaire Dagger of Rage","Carrion Legionnaire Greatsword of Rage","Carrion Legionnaire Horn of Rage","Carrion Legionnaire Longbow of Rage","Carrion Legionnaire Maul of Rage","Carrion Legionnaire Shield of Rage","Carrion Legionnaire Short Bow of Rage","Carrion Legionnaire Sword of Rage","Carrion Legionnaire Symbol of Rage","Carrion Legionnaire Virge of Rage","Carrion Pearl Bludgeoner","Carrion Pearl Blunderbuss","Carrion Pearl Brazier","Carrion Pearl Broadsword","Carrion Pearl Carver","Carrion Pearl Conch","Carrion Pearl Crusher","Carrion Pearl Handcannon","Carrion Pearl Needler","Carrion Pearl Quarterstaff","Carrion Pearl Reaver","Carrion Pearl Rod","Carrion Pearl Sabre","Carrion Pearl Shell","Carrion Pearl Siren","Carrion Pearl Stinger","Carrion Tribal Axe of Rage","Carrion Tribal Bow of Rage","Carrion Tribal Dagger of Rage","Carrion Tribal Focus of Rage","Carrion Tribal Greatsword of Rage","Carrion Tribal Mace of Rage","Carrion Tribal Pistol of Rage","Carrion Tribal Rifle of Rage","Carrion Tribal Scepter of Rage","Carrion Tribal Shield of Rage","Carrion Tribal Short Bow of Rage","Carrion Tribal Staff of Rage","Carrion Tribal Sword of Rage","Carrion Tribal Torch of Rage","Carrion Tribal Warhammer of Rage","Carrion Tribal Warhorn of Rage","Cavalier's Pearl Bludgeoner","Cavalier's Pearl Blunderbuss","Cavalier's Pearl Brazier","Cavalier's Pearl Broadsword","Cavalier's Pearl Carver","Cavalier's Pearl Conch","Cavalier's Pearl Crusher","Cavalier's Pearl Handcannon","Cavalier's Pearl Needler","Cavalier's Pearl Quarterstaff","Cavalier's Pearl Reaver","Cavalier's Pearl Rod","Cavalier's Pearl Sabre","Cavalier's Pearl Shell","Cavalier's Pearl Siren","Cavalier's Pearl Stinger","Chalice of the Gods","Charrzooka","Cinderspire's Rage","Cinderspire's Tactics","Claws of the Desert","Cleric's Pearl Bludgeoner","Cleric's Pearl Blunderbuss","Cleric's Pearl Brazier","Cleric's Pearl Broadsword","Cleric's Pearl Carver","Cleric's Pearl Conch","Cleric's Pearl Crusher","Cleric's Pearl Handcannon","Cleric's Pearl Needler","Cleric's Pearl Quarterstaff","Cleric's Pearl Reaver","Cleric's Pearl Rod","Cleric's Pearl Sabre","Cleric's Pearl Shell","Cleric's Pearl Siren","Cleric's Pearl Stinger","Cobalt","Coldsnap","Combustion","Combustion","Cooguloosh","Crying Thorn of Dreams","Crystal Guardian","Crystalline Blade","Cutthroat Caller"]
+dgWeaponArray := ["Deathcamas of Dreams","Deathwish","Defiant Blaze","Dhuumseal","Dire Ceremonial Dagger of Rage","Dire Ceremonial Focus of Rage","Dire Ceremonial Hammer of Rage","Dire Ceremonial Longbow of Rage","Dire Ceremonial Morning Star of Rage","Dire Ceremonial Pistol of Rage","Dire Ceremonial Rifle of Rage","Dire Ceremonial Sabre of Rage","Dire Ceremonial Scepter of Rage","Dire Ceremonial Scimitar of Rage","Dire Ceremonial Short Bow of Rage","Dire Ceremonial Stave of Rage","Dire Ceremonial Torch of Rage","Dire Ceremonial Warhorn of Rage","Dire Ceremonial Winged Axe of Rage","Dire Orrian Axe of Rage","Dire Orrian Bow of Rage","Dire Orrian Dagger of Rage","Dire Orrian Focus of Rage","Dire Orrian Longsword of Rage","Dire Orrian Mace of Rage","Dire Orrian Pistol of Rage","Dire Orrian Rifle of Rage","Dire Orrian Sabre of Rage","Dire Orrian Scepter of Rage","Dire Orrian Shield of Rage","Dire Orrian Smasher of Rage","Dire Orrian Staff of Rage","Dire Orrian Torch of Rage","Dire Orrian Warhorn of Rage","Dire Pearl Bludgeoner","Dire Pearl Blunderbuss","Dire Pearl Brazier","Dire Pearl Broadsword","Dire Pearl Carver","Dire Pearl Conch","Dire Pearl Crusher","Dire Pearl Handcannon","Dire Pearl Needler","Dire Pearl Quarterstaff","Dire Pearl Reaver","Dire Pearl Rod","Dire Pearl Sabre","Dire Pearl Shell","Dire Pearl Siren","Dire Pearl Stinger","Dragonshot","Drakevenom","Dreadwing","Droknar's Forgehammer","Droknar's Recurve Bow","Droknar's Short Bow","Ebonblade","Éibhear Dunn","Éibhear Finn","Eir's Longbow","Eir's Short Bow","Emberglow","Emberspire","Entropy","Exterminator","Faithful","Fellsprout of Dreams","Final Curse","Final Rest","Firelighter","Fixer Upper","Foulbear Lucky Feathers","Ganadriva","Gearbore","Giver's Pearl Bludgeoner","Giver's Pearl Blunderbuss","Giver's Pearl Brazier","Giver's Pearl Broadsword","Giver's Pearl Carver","Giver's Pearl Conch","Giver's Pearl Crusher","Giver's Pearl Handcannon","Giver's Pearl Needler","Giver's Pearl Quarterstaff","Giver's Pearl Reaver","Giver's Pearl Rod","Giver's Pearl Sabre","Giver's Pearl Shell","Giver's Pearl Siren","Giver's Pearl Stinger","Glimmerfang","Graveyard Bloom of Dreams","Grimward","Guardian of the Six","Guild Defender"]
+hrWeaponArray := ["Handheld Disaster","Haunting Cap of Dreams","Hemlock of Dreams","Henbane of Dreams","Honor of Humanity","Horn of the Rogue Bull","Hypnotic Scepter","Ilex of Dreams","Imryldyeen","Infinite Wisdom","Ironfist","Jaws of Death","Jora's Defender","Jormag's Needle","Kenshi's Wing","Kevin","Khrysaor, the Golden Sword","King's Remembrance","Knight's Pearl Bludgeoner","Knight's Pearl Blunderbuss","Knight's Pearl Brazier","Knight's Pearl Broadsword","Knight's Pearl Carver","Knight's Pearl Conch","Knight's Pearl Crusher","Knight's Pearl Handcannon","Knight's Pearl Needler","Knight's Pearl Quarterstaff","Knight's Pearl Reaver","Knight's Pearl Rod","Knight's Pearl Sabre","Knight's Pearl Shell","Knight's Pearl Siren","Knight's Pearl Stinger","Knot of Justice","Knowledge is Power","Kodanroar","Komalie's Sacrificial Blade","Kryta's Embrace","Kryta's Salvation","Kymswarden","Labrys","Legionnaire Firebrand","Legionnaire Mace","Legionnaire Sidearm","Legionnaire Staff","Levvi's Detector","Lord Taeres's Shadow","Magi's Pearl Bludgeoner","Magi's Pearl Blunderbuss","Magi's Pearl Brazier","Magi's Pearl Broadsword","Magi's Pearl Carver","Magi's Pearl Conch","Magi's Pearl Crusher","Magi's Pearl Handcannon","Magi's Pearl Quarterstaff","Magi's Pearl Reaver","Magi's Pearl Rod","Magi's Pearl Sabre","Magi's Pearl Shell","Magi's Pearl Siren","Magi's Pearl Stinger","Magmaton","Malefacterym","Master Blaster","Maw of the Damned","Mecha Anchor","Memory of the Sky","Mojo","Monkshood of Dreams","Monsoon","Moonshank","Moonshine","Mystic Battleaxe","Mystic Caller","Mystic Crescent","Mystic Spike","Mystic Staff","Mystic Sword","Mystic Torch","Naegling","Naga Fang","Occultist Flame","Oikoumene","Old Reliable","Ophidian","Phoenix Reborn","Phoenix Talon","Pillar of Ulgoth","Poyaqui's Noggin","Rabid Pearl Bludgeoner","Rabid Pearl Blunderbuss","Rabid Pearl Brazier","Rabid Pearl Broadsword","Rabid Pearl Carver","Rabid Pearl Conch","Rabid Pearl Crusher","Rabid Pearl Handcannon","Rabid Pearl Needler","Rabid Pearl Quarterstaff","Rabid Pearl Reaver","Rabid Pearl Rod","Rabid Pearl Sabre","Rabid Pearl Shell","Rabid Pearl Siren","Rabid Pearl Stinger","Rampager's Pearl Bludgeoner","Rampager's Pearl Blunderbuss","Rampager's Pearl Brazier","Rampager's Pearl Broadsword","Rampager's Pearl Carver","Rampager's Pearl Conch","Rampager's Pearl Crusher","Rampager's Pearl Handcannon","Rampager's Pearl Needler","Rampager's Pearl Quarterstaff","Rampager's Pearl Reaver","Rampager's Pearl Rod","Rampager's Pearl Sabre","Rampager's Pearl Shell","Rampager's Pearl Siren","Rampager's Pearl Stinger","Razorstone","Reaver of the Mists","Remnant of Ascalon","Resonator","Rivetwall","Ruinmaker","Rusttooth"]
+szWeaponArray := ["Sarraceniaceae","Scepter of the Highborn","Scorchrazor's Fist","Sentinel's Pearl Bludgeoner","Sentinel's Pearl Blunderbuss","Sentinel's Pearl Brazier","Sentinel's Pearl Broadsword","Sentinel's Pearl Carver","Sentinel's Pearl Conch","Sentinel's Pearl Crusher","Sentinel's Pearl Handcannon","Sentinel's Pearl Needler","Sentinel's Pearl Quarterstaff","Sentinel's Pearl Reaver","Sentinel's Pearl Rod","Sentinel's Pearl Sabre","Sentinel's Pearl Shell","Sentinel's Pearl Siren","Sentinel's Pearl Stinger","Serpentstone","Settler's Pearl Bludgeoner","Settler's Pearl Blunderbuss","Settler's Pearl Brazier","Settler's Pearl Broadsword","Settler's Pearl Carver","Settler's Pearl Conch","Settler's Pearl Crusher","Settler's Pearl Handcannon","Settler's Pearl Needler","Settler's Pearl Quarterstaff","Settler's Pearl Reaver","Settler's Pearl Rod","Settler's Pearl Sabre","Settler's Pearl Shell","Settler's Pearl Siren","Settler's Pearl Stinger","Shadewort of Dreams","Shaman's Etched Artifact of Rage","Shaman's Etched Avenger of Rage","Shaman's Etched Blade of Rage","Shaman's Etched Blaster of Rage","Shaman's Etched Branch of Rage","Shaman's Etched Bulwark of Rage","Shaman's Etched Cudgel of Rage","Shaman's Etched Greatbow of Rage","Shaman's Etched Harbinger of Rage","Shaman's Etched Revolver of Rage","Shaman's Etched Scepter of Rage","Shaman's Etched Shard of Rage","Shaman's Etched Short Bow of Rage","Shaman's Etched Skeggox of Rage","Shaman's Etched Sledgehammer of Rage","Shaman's Etched Wartorch of Rage","Shaman's Pearl Bludgeoner","Shaman's Pearl Blunderbuss","Shaman's Pearl Brazier","Shaman's Pearl Broadsword","Shaman's Pearl Carver","Shaman's Pearl Conch","Shaman's Pearl Crusher","Shaman's Pearl Handcannon","Shaman's Pearl Needler","Shaman's Pearl Quarterstaff","Shaman's Pearl Reaver","Shaman's Pearl Rod","Shaman's Pearl Sabre","Shaman's Pearl Shell","Shaman's Pearl Siren","Shaman's Pearl Stinger","Shard of the Deep","Shield of the Moon","Shield of the Wing","Shiverstone","Silence","Siren's Call","Skybringer","Snakeroot of Dreams","Soldier's Pearl Bludgeoner","Soldier's Pearl Blunderbuss","Soldier's Pearl Brazier","Soldier's Pearl Broadsword","Soldier's Pearl Carver","Soldier's Pearl Conch","Soldier's Pearl Crusher","Soldier's Pearl Handcannon","Soldier's Pearl Needler","Soldier's Pearl Quarterstaff","Soldier's Pearl Reaver","Soldier's Pearl Rod","Soldier's Pearl Sabre","Soldier's Pearl Shell","Soldier's Pearl Siren","Soldier's Pearl Stinger","Song of the Temptress","Soulshard","Spectral Wave Modulator","Stardust","Stinger","Sun God's Gift","Super Hyperbeam Alpha","Tear of Grenth","The Briny Deep","The Hunt","The Punisher","The Ugly Stick","Tinwail","Titans' Vengeance","Tooth of Frostfang","Trosa's Short Bow","Trusty Rusty","Truth","Tsunami","Twin Sisters","Twin Talons","Usoku's Needle","Valkyrie Corrupted Artifact","Valkyrie Corrupted Avenger","Valkyrie Corrupted Blade","Valkyrie Corrupted Blaster","Valkyrie Corrupted Branch","Valkyrie Corrupted Bulwark","Valkyrie Corrupted Cudgel","Valkyrie Corrupted Greatbow","Valkyrie Corrupted Harbinger","Valkyrie Corrupted Revolver","Valkyrie Corrupted Scepter","Valkyrie Corrupted Shard","Valkyrie Corrupted Short Bow","Valkyrie Corrupted Skeggox","Valkyrie Corrupted Sledgehammer","Valkyrie Corrupted Wartorch","Valkyrie Pearl Bludgeoner","Valkyrie Pearl Blunderbuss","Valkyrie Pearl Broadsword","Valkyrie Pearl Carver","Valkyrie Pearl Conch","Valkyrie Pearl Crusher","Valkyrie Pearl Handcannon","Valkyrie Pearl Needler","Valkyrie Pearl Quarterstaff","Valkyrie Pearl Reaver","Valkyrie Pearl Rod","Valkyrie Pearl Sabre","Valkyrie Pearl Shell","Valkyrie Pearl Siren","Valkyrie Pearl Stinger","Venomstriker","Vera","Wall of Thorns","Windstorm","Winged Spatha","Wisteria","Wolfsbane of Dreams","X7-10 Alpha","Xanthium of Dreams","Zhaitan's Reach"]
+
+;Length of total Arrays
+acArrayCount := 169
+dgArrayCount := 95
+hrArrayCount := 130
+szArrayCount := 156
+totalCount := 550
+
+agAccumuatedArrayCount := 264
+arAccumuatedArrayCount := 394
+
+;Indexes for the different Arrays
+
+acIndex := 1
+dgIndex := 1
+hrIndex := 1
+szIndex := 1
+
+WeaponArray := acWeaponArray[acIndex]
+GoldPrice := acGoldArray[acIndex]
+SilverPrice := acSilverArray[acIndex]
+OrderQuantity := acQuantityArray[acIndex]
+
+LoopCount := (totalCount * 8)
+
+;Click into GW2
+Click 1691, 183
+; Click 'Buy Items' in the TP
+Click 537, 100
+
+;Remove all current buy orders
+if(canRemoveAllOrders)
+{
+	;REMOVER ORDER LOGIC HERE!!!!!
+	; Click 'Buy Items' in the TP
+	Click 844, 88
+	Sleep, 3000
+
+	;remove 'buy' filter
+	Click 512, 166
+	Sleep, 1200
+
+	Click 107, 247
+	Sleep, 3000
+
+	;Click in search text box
+	Click 99, 169
+	Sleep, 1000
+	Send, {ctrl down}{a down}{a up}{ctrl up}
+	send {Backspace}
+
+	Loop 4
+	{
+	Click 634, 690
+	Sleep, 1000
+	}
+
+	Loop %totalCount%
+  	{
+	
+	Click 910, 245
+	Sleep, 300
+	Click 910, 245
+	Sleep, 300
+
+	}
+}
+
+Loop %LoopCount%
+{
+	;Set Run Time for Message Box
+	time := FormatSeconds((A_TickCount-StartTime)/1000)
+	MsgBox, 3, , Run Time = %time% `nLine totalIndex = %totalIndex% `nLine acIndex = %acIndex% `nLine dgIndex = %dgIndex% `nLine hrIndex = %hrIndex% `nLine szIndex = %szIndex%   `nLine isBuy = %isBuy% `nLine WeaponArray = %WeaponArray% `nLine GoldPrice = %GoldPrice% `nLine SilverPrice = %SilverPrice% `nLine BuyCount = %BuyCount%, .5
+	
+	if (Mod(totalIndex,totalCount) = 0)
+	{
+		isBuy := szIsBuyArray[szArrayCount]
+		WeaponArray := szWeaponArray[szArrayCount]
+		GoldPrice := szGoldArray[szArrayCount]
+		SilverPrice := szSilverArray[szArrayCount]
+		OrderQuantity := szQuantityArray[szArrayCount]
+		
+		acIndex := 1
+		dgIndex := 1
+		hrIndex := 1
+		szIndex := 1
+		totalIndex++
+	}
+	else
+	{
+		if(Mod(totalIndex,totalCount) <= acArrayCount) ; ----------- < 169 -------------
+		{ 
+			isBuy := acIsBuyArray[acIndex]
+			WeaponArray := acWeaponArray[acIndex]
+			GoldPrice := acGoldArray[acIndex]
+			SilverPrice := acSilverArray[acIndex]
+			OrderQuantity := acQuantityArray[acIndex]
+			
+			acIndex++
+			
+			if(acIndex > acArrayCount)
+			{
+				acIndex := 1
+			}
+		}
+		else
+		{
+			if((Mod(totalIndex,totalCount) > acArrayCount) && (Mod(totalIndex,totalCount) <= agAccumuatedArrayCount)) ;--- > 169 and <= 264
+			{ 
+				isBuy := dgIsBuyArray[dgIndex]
+				WeaponArray := dgWeaponArray[dgIndex]
+				GoldPrice := dgGoldArray[dgIndex]
+				SilverPrice := dgSilverArray[dgIndex]
+				OrderQuantity := dgQuantityArray[dgIndex]
+				
+				dgIndex++
+			
+				if(dgIndex > dgArrayCount)
+				{
+					dgIndex := 1
+				}
+			}
+			else
+			{
+				if((Mod(totalIndex,totalCount) > agAccumuatedArrayCount) && (Mod(totalIndex,totalCount) <= arAccumuatedArrayCount)) ;--- > 264 and <= 394
+				{ 
+					isBuy := hrIsBuyArray[hrIndex]
+					WeaponArray := hrWeaponArray[hrIndex]
+					GoldPrice := hrGoldArray[hrIndex]
+					SilverPrice := hrSilverArray[hrIndex]
+					OrderQuantity := hrQuantityArray[hrIndex]
+					
+					hrIndex++
+				
+					if(hrIndex > hrArrayCount)
+					{
+						hrIndex := 1
+					}
+				}
+				else
+				{
+					if((Mod(totalIndex,totalCount) > arAccumuatedArrayCount) && (Mod(totalIndex,totalCount) < totalCount)) ;--- > 394 and < 550
+					{ 
+						isBuy := szIsBuyArray[szIndex]
+						WeaponArray := szWeaponArray[szIndex]
+						GoldPrice := szGoldArray[szIndex]
+						SilverPrice := szSilverArray[szIndex]
+						OrderQuantity := szQuantityArray[szIndex]
+						
+						szIndex++
+					
+						if(szIndex > szArrayCount)
+						{
+							szIndex := 1
+						}
+					}
+				}
+			}
+		}
+		totalIndex++
+	}
+	
+	;Run every now and then
+	if (Mod(totalIndex,10) = 9)
+	{
+		Click 1013, 407
+		Click down
+		Click down right
+		Click up
+		Click up right
+		;Send, {space}
+		Sleep, 200
+	}
+
+	;------------------------------------------------------------------------
+	;--------------------------------Buy Logic-------------------------------
+	;------------------------------------------------------------------------
+	if(canBuySellWeapons){
+	
+		if (isBuy && canBuyWeapon)
+		{
+			;------------------------------------------------------------------------
+			;---------------------------Remove Order Logic---------------------------
+			;------------------------------------------------------------------------	
+			if (canRemoveOrders && (totalIndex > totalCount))
+			{
+				; Click 'MyTransactions' in the TP
+				Click 874, 88
+				Sleep, 1000
+			
+				;remove 'buy' filter
+				Click 373, 166
+				Sleep, 500
+				;remove 'buy' filter
+				Click 373, 166
+				Sleep, 1000
+			
+				;Click ' Current Transactions' 
+				Click 170, 210
+				Sleep, 1000
+				; Click 'Buy Items' in the TP
+				Click 137, 247
+				Sleep, 1000
+
+				
+				Loop %BuyCount%
+				{
+					;Click load
+					Click 635, 687
+					Sleep, 2000
+				}
+				
+				;Click 'Search' box
+				Click 130, 169
+				Sleep, 1000 
+			
+				;Enter weapon name 
+				Send, %WeaponArray%
+				Sleep, 2000 
+
+				;------------------------------------------------------------------------
+				;----------------------Remove Second Buy Order---------------------------
+				;------------------------------------------------------------------------
+				
+				Loop 3
+				{
+					;Press 'Cancel' to remove from buy transactions
+					Click 910, 242
+					Sleep, 300
+
+					;Click 'Confirm'
+					Click 910, 242
+					Sleep, 1000
+				}
+			}
+			; Click 'Buy Items' in the TP
+			Click 537, 100
+			Sleep, 1000
+
+			;remove 'buy' filter
+			Click 343, 166
+			Sleep, 500
+
+			;remove 'buy' filter
+			Click 343, 166
+			Sleep, 500
+
+			;Click in search text box
+			Click 99, 169
+			Sleep, 1500  
+
+			;Enter weapon name 
+			Send, %WeaponArray%
+			Sleep, 3000 
+		 
+			;Click Weapon
+			Click 341, 244
+			Sleep, 1500 
+		 
+			;Click Highest bid
+			Click 300, 503 
+			Sleep, 750  		
+
+			;Quantity Order
+			Click 395, 236
+			Sleep, 500
+			Click 395, 236
+			Sleep, 500
+
+			Send, {ctrl down}
+			Sleep, 300
+			Send, {a down}
+			Sleep, 500
+			Send, {a up}
+			Sleep, 500
+			Send, {ctrl up}
+			Sleep, 500
+			send {Backspace}
+			Sleep, 500
+			
+			Send, %OrderQuantity%  
+			Sleep, 1500 
+
+			;Increase buy price by 1 copper
+			click 580, 276
+			sleep, 1500 
+
+			; Place Order
+			click 426, 378 
+			Sleep, 1500
+	  
+			;Close buy window
+			click 770, 128
+			Sleep, 500 
+		}
+		
+		;------------------------------------------------------------------------
+		;-------------------------------Sell Logic-------------------------------
+		;------------------------------------------------------------------------
+		
+		if(totalIndex > totalCount)
+		{
+			if (canSellWeapon)
+			{
+				; Click 'Sell Items' in the TP
+				Click 730, 90
+				Sleep, 1000
+
+				; Click to clear filter
+				Click 410, 166
+				Sleep, 500
+				Click 410, 166
+				Sleep, 1000
+				
+				;Click in search text box
+				Click 130, 169
+				Sleep, 1500
+
+				;Enter weapon name 
+				Send, %WeaponArray%
+				Sleep, 2000 
+
+				;Click Weapons
+				Click 510, 241
+				Sleep, 1000
+
+				if (GoldPrice = 0){
+					;Click Current Lowest Seller
+					Click 530, 503
+					Sleep, 700
+
+					;Reduce copper price by one
+					Click 580, 286
+					Sleep, 500
+				}
+				else{
+					;Click Gold Price
+					Click 420, 277
+					Sleep, 700
+				
+					;Delete current gold price
+					Send, {ctrl down}{a down}{a up}{ctrl up}
+					Sleep, 500
+					send {Backspace}
+					Sleep, 500
+
+					;Enter new gold price
+					Send, %GoldPrice%
+					Sleep, 500
+			
+					;Click Silver Price
+					Click 490, 278
+					Sleep, 500
+				
+					;Delete current silver price
+					Send, {ctrl down}{a down}{a up}{ctrl up}
+					Sleep, 500
+					send {Backspace}
+					Sleep, 500
+				
+					;Enter new silver price
+					Send, %SilverPrice%
+					Sleep, 500
+			
+				}
+
+				;Max Quanity
+				Click 609, 245
+				Sleep, 200
+				Click 609, 245
+				Sleep, 200
+
+				;Click 'List This Item'
+				Click 439, 375
+				Sleep, 1500
+
+				;Click Close 
+				Click 507, 370
+				Sleep, 1500
+			}
+		
+		
+			
+			
+		}
+		;Click 'Take All'
+		Click 200, 690
+		Sleep, 500
+	}
+}
+
+FormatSeconds(NumberOfSeconds)  ; Convert the specified number of seconds to hh:mm:ss format.
+{
+    time = 19990101  ; *Midnight* of an arbitrary date.
+    time += %NumberOfSeconds%, seconds
+    FormatTime, mmss, %time%, mm:ss
+    SetFormat, float, 2.0
+    return NumberOfSeconds//3600 ":" mmss  ; This method is used to support more than 24 hours worth of sections.
+}	
+	
+Odd(n)
+{
+    return n&1
+}
+Even(n)
+{
+    return mod(n, 2) = 0
+}
+
+Escape::
+ExitApp
+Return
+
+`::
+Sleep, 30000
+Return

@@ -1,0 +1,120 @@
+﻿<Window x:Class="Guild_Wars_2_AutoTrader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Guild_Wars_2_AutoTrader"
+        Title="Auto Trader" Height="400" Width="800"
+        WindowStartupLocation="CenterScreen" 
+        MouseLeftButtonDown="DragWindow"
+        x:Name="root"
+        xmlns:model="clr-namespace:Guild_Wars_2_AutoTrader.Scripts">
+
+    <Window.Resources>
+        <Style TargetType="StatusBar" x:Key="ShowHide">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding  ElementName=HiddenProgressBar, Path=Value}" Value="0">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=HiddenProgressBar, Path=Value}" Value="1">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="MainGrid" Height="370"  VerticalAlignment="Bottom">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="0" 
+                Click="SelectOptions" Content="Script Options" 
+                Name="ScriptOptionBtn" 
+                Margin="10" Height="29" IsEnabled="{Binding Path=IsComplete, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Grid.Column="1" Grid.Row="0"
+                Click="EditTemplateFile" Content="Edit Template File"
+                Name="EditTemplateBtn"
+                Margin="10" Height="29"/>
+
+        <ListView ItemsSource="{Binding Path=Log, UpdateSourceTrigger=PropertyChanged}" x:Name="LogList" Margin="5,0,5,0" 
+                  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="4" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="60">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Path=ImageSource}" Margin="5" Width="40" Height="40"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="600">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Message}" Height="20" Margin="15" FontSize="14" FontWeight="Medium" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StatusBar Grid.Row="5" Grid.ColumnSpan="6" Style="{StaticResource ShowHide}" >
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem HorizontalAlignment="Center" 
+                             VerticalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="4">
+                <ProgressBar Value="{Binding Path=Progress, UpdateSourceTrigger=PropertyChanged}" 
+                             Name="HiddenProgressBar" Width="500" Height="40">
+                </ProgressBar>
+            </StatusBarItem>
+            <StatusBarItem Grid.ColumnSpan="4" Visibility="Visible" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding ElementName=HiddenProgressBar, Path=Value, StringFormat={}{0:0}%}" ></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem  Grid.Column="4" Grid.ColumnSpan="2">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock TextAlignment="Center" 
+                                   Text="{Binding Path=ProgressText, UpdateSourceTrigger=PropertyChanged}"
+                                   Padding="10,10,10,15"
+                                   Margin="10,10,10,10"
+                                   Background="White" 
+                                   Width="241" Height="40" 
+                                   FontWeight="DemiBold" FontSize="12" />
+                    </Grid>
+                    
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
