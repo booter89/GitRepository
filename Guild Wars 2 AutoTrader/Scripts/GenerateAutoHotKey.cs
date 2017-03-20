@@ -367,8 +367,18 @@ namespace Guild_Wars_2_AutoTrader.Scripts
         {
             #region Directory and Files 
             //Locate Files and Folders for the Template to be pulled and pushed to
+            string currentUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            string folderName = "";
 
-            string folderName = Entities.Constants.scriptTopFolder;
+            if (currentUser == "Kyle-PC\\Kyle")
+            {
+                folderName = Entities.Constants.KylePCFolder;
+
+            }
+            else if (currentUser == "")
+            {
+                throw new Exception();
+            }
             string subfolder = DateTime.Now.ToString("MMddyyyy");
             string pathString = System.IO.Path.Combine(folderName, subfolder);
             string fileName = String.Format("GW2_Auto_Trader_{0}.ahk", DateTime.Now.ToString("MMddyyyy_HHmmss"));
@@ -376,11 +386,11 @@ namespace Guild_Wars_2_AutoTrader.Scripts
             string scriptTemplateFile = Entities.Constants.scriptTemplate;
 
             //Check to see if Template File exists, if not return;
-            if (!System.IO.File.Exists(scriptTemplateFile))
-            {
-                MessageBox.Show("Template File Missing", "Template File Missing", MessageBoxButton.OK);
-                return;
-            }
+            //if (!System.IO.File.Exists(scriptTemplateFile))
+            //{
+            //    MessageBox.Show("Template File Missing", "Template File Missing", MessageBoxButton.OK);
+            //    return;
+            //}
 
             if (!System.IO.Directory.Exists(pathString))
             {

@@ -18,7 +18,7 @@ namespace Guild_Wars_2_AutoTrader.Entities
 
         //Folder directories
         public const string scriptTopFolder = @"C:\Users\kttruedson\Desktop\GW2AutoTraderScripts";
-
+        public const string KylePCFolder = @"C:\Users\Kyle\Desktop\AHK Scripts";
         //Templates
         public const string scriptTemplate = @"C:\Users\kttruedson\Desktop\Personal Projects\030817\Guild Wars 2 AutoTrader - Copy\Guild Wars 2 AutoTrader\TemplateFiles\Template.txt";
 

@@ -22,6 +22,7 @@ using System.Windows.Controls.Primitives;
 using System.Collections.Specialized;
 using Microsoft.Win32;
 using System.Diagnostics;
+using System.Net;
 
 namespace Guild_Wars_2_AutoTrader
 {
@@ -38,7 +39,12 @@ namespace Guild_Wars_2_AutoTrader
         { 
             InitializeComponent();
             this.TaskbarItemInfo = new System.Windows.Shell.TaskbarItemInfo();
-            
+
+            if (isAPIWorking())
+            {
+                canEnableButtons(false);
+            }
+
             ((INotifyCollectionChanged)LogList.Items).CollectionChanged += ListView_CollectionChanged;
 
         }
@@ -145,6 +151,44 @@ namespace Guild_Wars_2_AutoTrader
             editTemplateWindow.Visibility = Visibility.Visible;
 
             editTemplateWindow.Activate();
+        }
+
+        public bool isAPIWorking()
+        {
+            try
+            {
+                string uri = @"https://api.guildwars2.com/v2/items/27020";
+
+                var request = WebRequest.Create(uri);
+                using (var response = request.GetResponse())
+                {
+                    using (var responseStream = response.GetResponseStream())
+                    {
+                        return true;
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                if (ex.Status == WebExceptionStatus.ProtocolError && ex.Response != null)
+                {
+                    var resp = (HttpWebResponse)ex.Response;
+                    if (resp.StatusCode == HttpStatusCode.NotFound)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        // Do something else
+                        return false;
+                    }
+                }
+                else
+                {
+                    // Do something else
+                    return false;
+                }
+            }
         }
 
     }

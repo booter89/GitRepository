@@ -101,3 +101,69 @@ C:\Users\kttruedson\Desktop\Personal Projects\030817\Guild Wars 2 AutoTrader - C
 C:\Users\kttruedson\Desktop\Personal Projects\030817\Guild Wars 2 AutoTrader - Copy\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.csproj.GenerateResource.Cache
 C:\Users\kttruedson\Desktop\Personal Projects\030817\Guild Wars 2 AutoTrader - Copy\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.exe
 C:\Users\kttruedson\Desktop\Personal Projects\030817\Guild Wars 2 AutoTrader - Copy\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.pdb
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\MainWindow.g.cs
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\User Control\ScriptOptions.g.cs
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Windows\TemplateEdit.g.cs
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\App.g.cs
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader_MarkupCompile.cache
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader_MarkupCompile.lref
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\MainWindow.baml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\User Control\ScriptOptions.baml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Windows\TemplateEdit.baml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.g.resources
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild_Wars_2_AutoTrader.Properties.Resources.resources
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.csproj.GenerateResource.Cache
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.exe
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.pdb
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Guild Wars 2 AutoTrader.exe.config
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Guild Wars 2 AutoTrader.exe.manifest
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Guild Wars 2 AutoTrader.application
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Guild Wars 2 AutoTrader.exe
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Guild Wars 2 AutoTrader.pdb
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Composition.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Mvvm.Desktop.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Mvvm.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.PubSubEvents.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Composition.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.Mvvm.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.exe.manifest
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\Guild Wars 2 AutoTrader.application
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\User Control\APINotWorking.g.cs
+C:\Users\Kyle\Desktop\GitRepository\Guild Wars 2 AutoTrader\obj\Debug\User Control\APINotWorking.baml
